@@ -12,8 +12,11 @@
     <title>Dropbox</title>
 </head>
 <body>
+    <!-- Header in flex con due figli diretti -->
     <header>
+        <!-- Primo figlio diretto dell'header -->
         <div class="offers">
+            <!-- Logo -->
             <div class="offers-items">
                 <img src="./img/logo-small.png" alt="logo">
             </div>
@@ -21,14 +24,17 @@
             <div class="offers-items">
                 Perchè Dropbox
             </div>
+
             <div class="offers-items">
                 Funzioni
             </div>
+
             <div class="offers-items">
                 Piani e Prezzi
             </div>
         </div>
 
+        <!-- Secondo figlio diretto dell'header -->
         <div class="offers">
             <div class="offers-items">
                 Supporto
@@ -40,6 +46,7 @@
                 Accedi
             </div>
             
+            <!-- Link -->
             <div class="start">
                 <a href="#">Inizia</a>
             </div>
@@ -47,34 +54,168 @@
     </header>
 
     <main>
-        <section class="back-op">
+        <!-- Prima sezione -->
+        <section class="back-opening">
+            <!-- Contenitore in relative -->
             <div class="section-larger opening">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                <!-- Contenitore del testo e immagine della prima sezione, in flex -->
                 <div class="opening-text">
+                    <!-- Parte testuale -->
                     <div class="text">
                         Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. <br>
                         Dropbox Buisness è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         
+                        <!-- "Bottone" -->
                         <div class="free-trial">
                             Inizia la tua prova gratuita!
                         </div>
 
                         Annulla in qualsiasi momento!
 
+                        <!-- Icona freccia -->
                         <div class="arrow">
                             <i class="fa-solid fa-arrow-down"></i>
                         </div>
                     </div>
 
-                    <div class="image">
+                    <!-- Immagine -->
+                    <div class="image-container">
                         <img src="./img/jumbo.png" alt="jumbo">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Seconda sezione -->
         <section class="business-plan section-smaller">
-            ahahah
+            <h2>Trova il piano business che fa per te</h2>
+
+            <!-- Doppio "checkbox" -->
+            <div class="flex">
+                <!-- Contenitore per il "checkbox" e il testo affiancato -->
+                <div class="checkbox-container">
+                    <!-- Checkbox selezionato -->
+                    <div class="checkbox checkbox-full">
+                    </div>
+                    Fatturazione mensile
+                </div>
+                
+                <!-- Contenitore per il "checkbox" e il testo affiancato -->
+                <div class="checkbox-container">
+                    <!-- Checkbox NON selezionato -->
+                    <div class="checkbox checkbox-empty">
+                    </div>
+                    Fatturazione annuale
+                </div>
+            </div>
+
+            <!-- Contenitore delle offerte -->
+            <div class="offers">
+                <!-- Contenitore generico da utilizzare per le varie offerte -->
+                <div class="subscription-card">
+                     <!-- Tipo di offerta, in testata -->
+                    <div class="subscription-type">
+                        <i class="fa-solid fa-user-large"></i>
+                        Singolo
+                    </div>
+
+                    <!-- Contenitore del Corpo dell'offerta -->
+                    <div class="subscription-corps">
+                        <!-- Elementi del Corpo dell'offerta -->
+                        <h3 class="subscription-items">Professional</h3>
+                        <!-- Prezzo -->
+                        <div class="price subscription-items">
+                            <i class="fa-solid fa-euro-sign"></i>
+                            12.00
+                        </div>
+                        <!-- Mensilità -->
+                        <div class="month subscription-items">
+                            /mese
+                        </div>
+
+                        <!-- Contenitore delle informazioni del Corpo -->
+                        <div class="subscription-information">
+                            <!-- Contenitore generico per le infomrmazioni nel Corpo, in
+                            flex per affiancare testo e icona -->
+                            <div class="subscription-items flex">
+                                <div class="s-icon">
+                                    <i class="fa-solid fa-euro-sign"></i>
+                                </div>
+
+                                <div class="icon-text">
+                                    1 utente
+                                </div>
+                            </div>
+
+                            <!-- Contenitore generico per le infomrmazioni nel Corpo, in
+                            flex per affiancare testo e icona -->
+                            <div class="subscription-items flex">
+                                <div class="s-icon">
+                                    <i class="fa-solid fa-folder"></i>
+                                </div>
+
+                                <div class="icon-text">
+                                    5 TB di spazio di archiviazione sicuro
+                                </div>
+                            </div>
+
+                            <!-- Contenitore generico per le infomrmazioni nel Corpo, in
+                            flex per affiancare testo e icona -->
+                            <div class="subscription-items flex">
+                                <div class="s-icon">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+
+                                <div class="icon-text">
+                                    Funzioni di produttività premium e condivisione file semplice e sicura
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- "Bottone" generico -->
+                        <div class="free-trial subscription-ft">
+                            Prova gratis per 30 giorni
+                        </div>
+
+                        <!-- Link neelle offerte -->
+                        <div class="subscription-items">
+                            oppure <a href="#">acquista ora</a>
+                        </div>
+
+                        <!-- Linea di spacco -->
+                        <hr>
+
+                        <!-- Contenitore generico dei dettagli delle offerte -->
+                        <div class="subscription-details">
+                            <div class="s-footer-title">Punti salienti del piano</div>
+                        
+                            <div class="subscription-items flex s-footer-items">
+                                <div class="s-footer-icon s-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                <div class="icon-text">
+                                    Invia file fino a 100 GB con Dropbox Trasfert
+                                </div>
+                            </div>
+                            
+                            <!-- Elementi dei dettagli delle offerte, molto simili agli
+                            elemnti del Corpo delle offerte -->
+                            <div class="subscription-items flex s-footer-items">
+                                <div class="s-footer-icon s-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                <div class="icon-text">
+                                    Cartelle offline su dispositivi mobili
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>

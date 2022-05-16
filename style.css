@@ -1,3 +1,4 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -5,77 +6,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Settaggio immagini */
 img{
     width: 100%;
 }
-.section-larger{
-    width: 60%;
-    margin: 0 auto;
-}
-.section-smaller{
-    width: 50%;
-    margin: 0 auto;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    background-color: white;
-}
-.offers{
-    display: flex;
-    align-items: center;
-}
-.offers-items{
-    font-size: 15px;
-    padding: 15px;
-    transition: background-color 1s;
-    height: 100%;
-}
-.offers-items:hover{
-    background-color: rgb(227, 224, 224);
-    cursor: pointer;
-}
-.start{
-    font-size: 15px;
-    padding: 15px;
-    height: 100%;
-}
-.start a{
-    padding: 5px 10px;
-    background-color: rgb(0, 149, 255);
-    color: white;
-    text-decoration: none;
-}
-
-
-main{
-    margin-top: 65px;
-}
-.back-op{
-    background-color: rgb(0, 195, 255);
-    text-align: start;
-}
-
-.opening{
-    position: relative;
-    top: 100px;
-}
-.opening h1{
-    font-size: 50px;
-}
-.opening-text{
-    display: flex;
-    margin-top: 20px;
-}
-.text{
-    width: 30%;
-    font-size: 12px;
-}
+/* Settaggio generico per i contenitori simil 
+bottoni, con un hover per il background*/
 .free-trial{
     padding: 12px;
     color:white;
@@ -90,17 +26,242 @@ main{
 .free-trial:hover{
     background-color: brown;
 }
+
+/* Sezioni più grandi */
+.section-larger{
+    width: 60%;
+    margin: 0 auto;
+}
+/* Sezioni più piccole */
+.section-smaller{
+    width: 50%;
+    margin: 0 auto;
+}
+/* Classe per settare il flex */
+.flex{
+    display: flex;
+}
+
+/* Settaggio testata */
+header{
+    /* Display flex così da posizionare gli
+    elementi agli estremi */
+    display: flex;
+    justify-content: space-between;
+    /* Position fixed così da far scorrere
+    l'header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: white;
+}
+/* Elemento dell'header (2 elementi) */
+.offers{
+    /* In flex così da posizionare centralmente 
+    gli elementi e gestirli meglio */
+    display: flex;
+    align-items: center;
+}
+/* Elementi dell'offers a cui è applciato un
+hover per lo sfondo in transition di 1s con 
+cursor*/
+.offers-items{
+    font-size: 15px;
+    padding: 15px;
+    transition: background-color 1s;
+    height: 100%;
+}
+.offers-items:hover{
+    background-color: rgb(227, 224, 224);
+    cursor: pointer;
+}
+/* Link nell'header */
+.start{
+    font-size: 15px;
+    padding: 15px;
+    height: 100%;
+}
+.start a{
+    padding: 5px 10px;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* Margin-top al main così da fixare l'altezza,
+dato l'header in fixed */
+main{
+    margin-top: 65px;
+}
+
+
+
+
+/* Inizio prima sezione */
+/* Div per lo sfondo della prima sezione */
+.back-opening{
+    background-color: rgb(0, 195, 255);
+    text-align: start;
+}
+/* Contenitore degli elementi della prima 
+sezione relative, così da spostare a livello 
+visivo verso il basso */
+.opening{
+    position: relative;
+    top: 100px;
+}
+.opening h1{
+    font-size: 50px;
+}
+/* Contenitore del testo e dell'immagine della 
+prima sezione, in flex per posizionare i due
+elementi */
+.opening-text{
+    display: flex;
+    margin-top: 20px;
+}
+/* Contenitore dellla parte testuale */
+.text{
+    width: 30%;
+    font-size: 12px;
+}
+/* Freccia nella prima sezione */
 .arrow{
     font-size: 30px;
     margin-top: 75px;
 }
-.image{
+/* Contenitore dell'immagine della prima 
+sezione */
+.image-container{
     width: 70%;
 }
 
 
 
+/* Inizio seconda sezione */
+/* Contenitore della seconda sezione, con 
+margin-top per rimediare al relative della
+prima sezione */
+.business-plan{
+    margin-top: 150px;
+}
+.business-plan h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+/* Contenitore per i "checkbox" (da completare con degli hover)*/
+.checkbox-container{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+/* "Checkbox" in inline-block per affiancargli
+il testo */
+.checkbox{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 3px;
+}
+/* Checkbox selezionato */
+.checkbox-full{
+    border: 4px solid black;
+}
+/* Checkbox NON selezionato */
+.checkbox-empty{
+    border: 1px solid black;
+}
 
-.buisness-plan{
-    
+/* Contenitore per le offerte nella seconda 
+sezione, in flex per posizionare le alternative.
+In wrap così da andare a capo nel caso in cui se
+ne vogliano aggiungere altre */
+.offers{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+/* Contenitore generico per l'offerta, da 
+utilizzare come base per le possibili offerte */
+.subscription-card{
+    width: calc(100% - 66% - 20px);
+    border: 1px solid black;
+}
+/* Tipo di offerta, in testata */
+.subscription-type{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+/* Corpo dell'offerta */
+.subscription-corps{
+    padding: 15px 25px;
+}
+/* Titolo del Corpo */
+.subscription-corps h3{
+    font-size: 25px;
+}
+/* Tutti gli elementi all'interno del Corpo */
+.subscription-items{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+/* Prezzo */
+.price{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Mensilità */
+.month{
+    color: rgb(186, 184, 184);
+}
+/* Contenitore delle informazioni nel testo */
+.subscription-information{
+    margin: 15px 0;
+}
+/* Settaggio icona nell'offerta, in maniera tale
+da non permettere al testo affianco di posizionarsi
+sotto l'icona */
+.s-icon{
+    display: inline-block;
+    width: 7%;
+    line-height: 100%;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+/* Settaggio del testo nell'offerta, in maniera tale
+da permettere all'icona affianco di NON far 
+posizionare il testo sotto */
+.icon-text{
+    width: 90%;
+    display: inline-block;
+}
+/* Settaggio della larghezza del bottone 
+generico nelle offerte */
+.subscription-ft{
+    width: 100%;
+}
+/* Linea di spacco nelle offerte */
+.subscription-corps hr{
+    width: 30%;
+    margin-bottom: 30px;
+}
+.s-footer-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Elementi dei dettagli delle offerte */
+.s-footer-items{
+    margin-bottom: 20px;
+}
+.s-footer-icon{
+    color: aqua;
 }
