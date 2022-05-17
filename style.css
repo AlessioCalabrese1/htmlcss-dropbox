@@ -187,7 +187,7 @@ il testo */
 sezione, in flex per posizionare le alternative.
 In wrap così da andare a capo nel caso in cui se
 ne vogliano aggiungere altre */
-.plans{
+.plans, .cards{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -197,7 +197,7 @@ ne vogliano aggiungere altre */
 }
 /* Contenitore generico per l'offerta, da 
 utilizzare come base per le possibili offerte */
-.subscription-card{
+.subscription-card, .operations-card{
     width: calc(100% - 66% - 20px);
     border: 1px solid black;
 }
@@ -216,7 +216,7 @@ utilizzare come base per le possibili offerte */
     font-size: 25px;
 }
 /* Tutti gli elementi all'interno del Corpo */
-.subscription-items{
+.subscription-items, .operations-items{
     margin-bottom: 30px;
     font-size: 15px;
 }
@@ -230,7 +230,7 @@ utilizzare come base per le possibili offerte */
     color: rgb(186, 184, 184);
 }
 /* Contenitore delle informazioni nel testo */
-.subscription-information{
+.subscription-information, .operations-info{
     margin: 15px 0;
 }
 /* Settaggio icona nell'offerta, in maniera tale
@@ -319,4 +319,39 @@ generico nelle offerte */
     border: 1px solid black;
     color: black;
     width: 50%;
+}
+
+
+.multi-cards
+{
+    margin-top: 60px;
+}
+.multi-cards h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.operations-card{
+    border: none;
+}
+.operations-img{
+    border: none;
+}
+.operations-head{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.dropbox-business{
+    margin-top: 50px;
+}
+.business-text{
+    width: 60%;
+    font-size: 20px;
+}
+.business-link{
+    margin-top: 20px;
+}
+.business-link a{
+    color: rgb(0, 115, 255);
 }
