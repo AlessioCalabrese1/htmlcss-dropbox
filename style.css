@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Settaggio immagini */
@@ -15,8 +16,8 @@ bottoni, con un hover per il background*/
 .free-trial{
     padding: 12px;
     color:white;
-    background-color: aqua;
-    transition: background-color 1s;
+    background-color: rgb(0, 94, 255);
+    transition: all 1s;
     width: 70%;
     font-size: 12px;
     text-align: center;
@@ -24,7 +25,7 @@ bottoni, con un hover per il background*/
     cursor: pointer;
 }
 .free-trial:hover{
-    background-color: brown;
+    box-shadow: inset 0px 0px 5px black;
 }
 
 /* Sezioni più grandi */
@@ -69,21 +70,24 @@ header{
     display: flex;
     align-items: center;
 }
-/* Elementi dell'offers a cui è applciato un
-hover per lo sfondo in transition di 1s con 
-cursor*/
-.offers-items{
+/* Link per l'header così da far funzionare il link 
+su tutta l'area occupata*/
+header a{
     font-size: 15px;
     padding: 15px;
     transition: background-color 1s;
     height: 100%;
+    color: black;
+    text-decoration: none;
+    line-height: 25px;
 }
-.offers-items:hover{
+header a:hover{
     background-color: rgb(227, 224, 224);
     cursor: pointer;
 }
 /* Link nell'header */
 .start{
+    margin-right: 10px;
     font-size: 15px;
     padding: 15px;
     height: 100%;
@@ -110,7 +114,7 @@ main{
 /* Inizio prima sezione */
 /* Div per lo sfondo della prima sezione */
 .back-opening{
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(125, 194, 243);
     text-align: start;
 }
 /* Contenitore degli elementi della prima 
@@ -139,6 +143,9 @@ elementi */
 .arrow{
     font-size: 30px;
     margin-top: 75px;
+}
+.arrow a{
+    color: black;
 }
 /* Contenitore dell'immagine della prima 
 sezione */
@@ -176,7 +183,7 @@ il testo */
 }
 /* Checkbox selezionato */
 .checkbox-full{
-    border: 4px solid black;
+    border: 4px solid rgb(0, 94, 255);
 }
 /* Checkbox NON selezionato */
 .checkbox-empty{
@@ -242,6 +249,9 @@ sotto l'icona */
     line-height: 100%;
     margin-right: 3px;
     margin-top: 2px;
+}
+.fa-check{
+    color: rgb(0, 94, 255);
 }
 /* Settaggio del testo nell'offerta, in maniera tale
 da permettere all'icona affianco di NON far 
@@ -354,4 +364,73 @@ generico nelle offerte */
 }
 .business-link a{
     color: rgb(0, 115, 255);
+}
+
+
+
+
+.designit{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+.designit-items{
+    width: calc(100% - 66%);
+    height: calc(100vw - (100vw / 3) * 2);
+    display: flex;
+    flex-wrap: wrap;
+}
+.designit-box{
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    transition: all 1s;
+}
+.designit-box:hover{
+    box-shadow: inset 0px 0px 30px black;
+}
+.designit-box img{
+    color: white;
+}
+.designit-text{
+    padding: 50px;
+    background-color: rgb(235, 233, 233);
+    width: calc(100vw - (100vw / 3) * 2);
+    height: calc(100vw - (100vw / 3) * 2);
+}
+.designit-text img{
+    width: 80%;
+    margin-bottom: 30px;
+}
+.designit-text hr{
+    width: 30%;
+    margin-bottom: 30px;
+}
+.d-text{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.d-business{
+    width: 100%;
+    background-color: rgb(125, 194, 243);
+}
+.d-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.db-text{
+    width: 40%;
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(122, 7, 7);
+}
+.db-button{
+    width: 30%;
+    background-color: white;
+    color: black;
 }
