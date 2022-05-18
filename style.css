@@ -123,10 +123,7 @@ header a:hover{
 }
 .window:hover .drop-down{
     visibility: visible;
-}
-.window:hover body{
-    background-color: black;
-    
+    box-shadow: 0px 0px 20px 100vw rgba(0,0,0,0.5);
 }
 
 
