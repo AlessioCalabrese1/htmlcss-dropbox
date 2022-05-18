@@ -104,6 +104,29 @@ header a:hover{
 }
 .window{
     height: 100%;
+    position: relative;
+}
+.drop-down{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 300px;
+    visibility: hidden;
+}
+.drop-down ul{
+    list-style: none;
+}
+.drop-down li{
+    padding: 15px 30px;
+    border: 1px solid red;
+    background-color: white;
+}
+.window:hover .drop-down{
+    visibility: visible;
+}
+.window:hover body{
+    background-color: black;
+    
 }
 
 
