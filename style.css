@@ -70,11 +70,13 @@ header{
     width: 100vw;
     background-color: white;
     box-shadow: 5px 0 5px;
+    height: 60px;
 }
 /* Elemento dell'header (2 elementi) */
 .offers{
     /* In flex così da posizionare centralmente 
     gli elementi e gestirli meglio */
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -83,23 +85,25 @@ su tutta l'area occupata*/
 header a{
     color: black;
     font-size: 15px;
+    line-height: 2;
 }
 header a:hover{
     background-color: rgb(227, 224, 224);
     cursor: pointer;
 }
 /* Link nell'header */
-.start{
-    margin-right: 10px;
-    font-size: 15px;
-    padding: 15px;
-    height: 100%;
-}
-.start a{
-    padding: 5px 10px;
-    background-color: rgb(0, 149, 255);
+.header-button{
+    height: auto;
+    margin-right: 20px;
+    padding: 0px 10px;
+    background-color: #0061ff;
     color: white;
-    text-decoration: none;
+}
+.header-button:hover{
+    background-color: #0061ff;
+}
+.window{
+    height: 100%;
 }
 
 
@@ -345,6 +349,7 @@ generico nelle offerte */
 .multi-cards h2{
     font-size: 35px;
     margin-bottom: 30px;
+    padding-top: 60px;
 }
 .operations-card{
     border: none;
