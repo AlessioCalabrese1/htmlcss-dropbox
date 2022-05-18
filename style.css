@@ -7,6 +7,15 @@
     scroll-behavior: smooth;
 }
 
+a{
+    font-size: 12px;
+    padding: 15px;
+    transition: background-color 1s;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
 /* Settaggio immagini */
 img{
     width: 100%;
@@ -14,9 +23,8 @@ img{
 /* Settaggio generico per i contenitori simil 
 bottoni, con un hover per il background*/
 .free-trial{
-    padding: 12px;
     color:white;
-    background-color: rgb(0, 94, 255);
+    background-color: #0061ff;
     transition: all 1s;
     width: 70%;
     font-size: 12px;
@@ -73,13 +81,8 @@ header{
 /* Link per l'header così da far funzionare il link 
 su tutta l'area occupata*/
 header a{
-    font-size: 15px;
-    padding: 15px;
-    transition: background-color 1s;
-    height: 100%;
     color: black;
-    text-decoration: none;
-    line-height: 25px;
+    font-size: 15px;
 }
 header a:hover{
     background-color: rgb(227, 224, 224);
@@ -114,7 +117,7 @@ main{
 /* Inizio prima sezione */
 /* Div per lo sfondo della prima sezione */
 .back-opening{
-    background-color: rgb(125, 194, 243);
+    background-color: #b4d0e7;
     text-align: start;
 }
 /* Contenitore degli elementi della prima 
@@ -141,10 +144,10 @@ elementi */
 }
 /* Freccia nella prima sezione */
 .arrow{
-    font-size: 30px;
     margin-top: 75px;
 }
 .arrow a{
+    font-size: 30px;
     color: black;
 }
 /* Contenitore dell'immagine della prima 
@@ -165,6 +168,7 @@ prima sezione */
 .business-plan h2{
     font-size: 35px;
     margin-bottom: 30px;
+    padding-top: 60px;
 }
 /* Contenitore per i "checkbox" (da completare con degli hover)*/
 .checkbox-container{
@@ -183,7 +187,7 @@ il testo */
 }
 /* Checkbox selezionato */
 .checkbox-full{
-    border: 4px solid rgb(0, 94, 255);
+    border: 4px solid #0061ff;
 }
 /* Checkbox NON selezionato */
 .checkbox-empty{
@@ -251,7 +255,7 @@ sotto l'icona */
     margin-top: 2px;
 }
 .fa-check{
-    color: rgb(0, 94, 255);
+    color: #0662ff;
 }
 /* Settaggio del testo nell'offerta, in maniera tale
 da permettere all'icona affianco di NON far 
@@ -279,7 +283,7 @@ generico nelle offerte */
     margin-bottom: 20px;
 }
 .s-footer-icon{
-    color: aqua;
+    color: 0662ff;
 }
 .fix{
     margin-bottom: 50px;
@@ -327,9 +331,11 @@ generico nelle offerte */
 .find-partner{
     background-color: white;
     border: 1px solid black;
-    color: black;
     width: 50%;
 }
+.find-partner a{
+    color: black;
+}   
 
 
 .multi-cards
@@ -363,7 +369,9 @@ generico nelle offerte */
     margin-top: 20px;
 }
 .business-link a{
+    font-size: 15px;
     color: rgb(0, 115, 255);
+    padding: 0;
 }
 
 
@@ -390,16 +398,18 @@ generico nelle offerte */
     transition: all 1s;
 }
 .designit-box:hover{
-    box-shadow: inset 0px 0px 30px black;
+    border: 20px solid #d1e9cd;
 }
 .designit-box img{
-    color: white;
+    filter: invert(1);
+
 }
 .designit-text{
     padding: 50px;
     background-color: rgb(235, 233, 233);
-    width: calc(100vw - (100vw / 3) * 2);
+    width: calc(100% / 3);
     height: calc(100vw - (100vw / 3) * 2);
+    overflow-y: scroll;
 }
 .designit-text img{
     width: 80%;
@@ -410,12 +420,12 @@ generico nelle offerte */
     margin-bottom: 30px;
 }
 .d-text{
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 .d-business{
     width: 100%;
-    background-color: rgb(125, 194, 243);
+    background-color: #b4d0e7;
 }
 .d-container{
     display: flex;
@@ -432,5 +442,80 @@ generico nelle offerte */
 .db-button{
     width: 30%;
     background-color: white;
+}
+.db-button a{
     color: black;
+}
+
+
+
+.questions-box{
+    margin: 50px auto;
+}
+.questions-box h2{
+    margin: 20px 0;
+    font-size: 40px;
+}
+.question{
+    padding: 20px 0;
+    cursor: pointer;
+}
+.question:hover .fa-angle-up{
+    display: inline;
+}
+.question:hover .deepening{
+    display: block;
+}
+.question:hover .fa-angle-down{
+    display: none;
+}
+.first-sight{
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+}
+.fa-angle-down, .fa-angle-up{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.fa-angle-up{
+    display: none;
+}
+.deepening{
+    padding-top: 20px;
+    display: none;
+}
+
+
+
+
+footer{
+    background-color: black;
+}
+.footer-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-items{
+    width: calc(100% / 5 - 20px);
+}
+footer h3{
+    color: white;
+    padding-bottom: 10px;
+}
+footer a{
+    color: white;
+    font-size: 15px;
+    padding: 0 0 20px 0;
+}
+footer hr{
+    width: 10%;
+    margin-bottom: 20px;
+}
+.language{
+    color: white;
+    padding-bottom: 30px;
 }
